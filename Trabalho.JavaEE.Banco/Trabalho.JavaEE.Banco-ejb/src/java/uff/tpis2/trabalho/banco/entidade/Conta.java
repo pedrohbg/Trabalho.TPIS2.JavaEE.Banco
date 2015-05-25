@@ -6,6 +6,8 @@
 package uff.tpis2.trabalho.banco.entidade;
 
 import java.util.Date;
+import javax.ejb.LocalBean;
+import javax.ejb.Stateless;
 import javax.inject.Named;
 
 /**
@@ -20,7 +22,7 @@ public class Conta {
      * Creates a new instance of Conta
      */
     private int id;
-    private double saldo;
+    private double saldo = 500.;
     private Date dataCriacao;
     private Cliente cliente;
 

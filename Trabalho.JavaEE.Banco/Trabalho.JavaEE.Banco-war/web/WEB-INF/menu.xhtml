@@ -10,15 +10,7 @@
             <h:form id="form_menu">
                 <ul class="nav nav-list">
                         <li class="">
-                            <h:commandLink action="#{navegacaoControlador.abrirPagina('saldos.xhtml')}">
-      
-                                        <i class="menu-icon fa fa-usd"></i>
-                                        <span class="menu-text"> Saldos </span>
-                            </h:commandLink>
-                                <b class="arrow"></b>
-                        </li>
-                        <li class="">
-                            <h:commandLink action="#{navegacaoControlador.abrirPagina('transferencias.xhtml')}">
+                            <h:commandLink action="transferencias.xhtml">
                                         <i class="menu-icon fa fa-exchange"></i>
                                         <span class="menu-text"> Transferências </span>
                             </h:commandLink>
@@ -26,7 +18,7 @@
                                 <b class="arrow"></b>
                         </li>					
                         <li class="">
-                                <h:commandLink action="#{navegacaoControlador.abrirPagina('pagamentos.xhtml')}">
+                                <h:commandLink action="pagamentos.xhtml">
                                         <i class="menu-icon fa fa-credit-card"></i>
                                         <span class="menu-text"> Pagamentos</span>
                                 </h:commandLink>
@@ -35,7 +27,7 @@
                         </li>								
 
                         <li class="">
-                                <h:commandLink action="#{navegacaoControlador.abrirPagina('extratos.xhtml')}">
+                                <h:commandLink action="extratos.xhtml">
                                         <i class="menu-icon fa fa-file-text-o"></i>
                                         <span class="menu-text"> Extratos</span>
                                 </h:commandLink>
@@ -43,13 +35,21 @@
                                 <b class="arrow"></b>
                         </li>					
                         <li class="">
-                                <h:commandLink action="#{navegacaoControlador.abrirPagina('investimentos.xhtml')}">
+                                <h:commandLink action="investimentos.xhtml">
                                         <i class="menu-icon fa fa-eur"></i>
                                         <span class="menu-text"> Investimentos</span>
                                 </h:commandLink>
 
                                 <b class="arrow"></b>
-                        </li>									
+                        </li>
+                        <li class="">
+                                <h:commandLink action="./index.xhtml">
+                                        <i class="menu-icon fa fa-eur"></i>
+                                        <span class="menu-text">Home</span>
+                                </h:commandLink>
+
+                                <b class="arrow"></b>
+                        </li>
                 </ul><!-- /.nav-list -->
                 </h:form>
         </ui:composition>
