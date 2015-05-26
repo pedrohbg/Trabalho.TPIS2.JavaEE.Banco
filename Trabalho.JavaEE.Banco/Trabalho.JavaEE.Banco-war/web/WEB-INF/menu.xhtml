@@ -9,7 +9,16 @@
         <ui:composition >
             <h:form id="form_menu">
                 <ul class="nav nav-list">
-                        <li class="">
+                    <li class="">
+                            <h:commandLink action="saque.xhtml">
+                                        <i class="menu-icon fa fa-exchange"></i>
+                                        <span class="menu-text"> Saque </span>
+                            </h:commandLink>
+
+                                <b class="arrow"></b>
+                        </li>					
+                            
+                    <li class="">
                             <h:commandLink action="transferencias.xhtml">
                                         <i class="menu-icon fa fa-exchange"></i>
                                         <span class="menu-text"> Transferências </span>
@@ -26,8 +35,17 @@
                                 <b class="arrow"></b>
                         </li>								
 
+                    <li class="">
+                                <h:commandLink action="opcaocheque.xhtml">
+                                        <i class="menu-icon fa fa-credit-card"></i>
+                                        <span class="menu-text">Cheques</span>
+                                </h:commandLink>
+
+                                <b class="arrow"></b>
+                        </li>								
+
                         <li class="">
-                                <h:commandLink action="extratos.xhtml">
+                                        <h:commandLink action="extratos.xhtml">
                                         <i class="menu-icon fa fa-file-text-o"></i>
                                         <span class="menu-text"> Extratos</span>
                                 </h:commandLink>
